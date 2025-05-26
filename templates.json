@@ -1,0 +1,29 @@
+{
+  "residential": {
+    "foundation": ["footings", "slab", "crawlspace"],
+    "framing": ["walls", "roof", "flooring", "trusses"],
+    "roofing": ["shingles", "metal", "tile"],
+    "finishes": ["drywall", "paint", "flooring-finishes", "trim-work"],
+    "electrical": ["rough-in-wiring", "fixtures", "panel-installation"],
+    "plumbing": ["rough-in-pipes", "fixtures", "water-heater"],
+    "hvac": ["ductwork", "furnace", "ac-unit"],
+    "insulation": ["walls", "attic", "floor"],
+    "landscaping": ["grading", "irrigation", "planting"]
+  },
+  "commercial": {
+    "site-work": ["excavation", "demolition", "utilities-connection"],
+    "structural": ["steel-frame", "concrete-tilt-up", "precast-concrete"],
+    "envelope": ["curtain-wall", "masonry", "exterior-panels"],
+    "hvac": ["rooftop-units", "variable-air-volume", "building-automation"],
+    "fire-protection": ["sprinklers", "fire-alarms", "emergency-lighting"],
+    "interiors": ["partitions", "ceilings", "flooring-commercial"],
+    "specialty-equipment": ["elevators", "kitchen-equipment", "medical-devices"],
+    "security": ["access-control", "cctv", "alarms-commercial"]
+  },
+  "renovation": {
+    "demolition": ["interior-demolition", "exterior-demolition", "debris-removal"],
+    "structural-repair": ["beams", "columns", "foundation-repair"],
+    "insulation": ["walls", "attic", "soundproofing"],
+    "cabinetry": ["kitchen-cabinets", "bathroom-cabinets", "custom-built-ins"]
+  }
+}

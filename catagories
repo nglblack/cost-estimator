@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Industry Cost Estimator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>🏗️ Multi-Industry Cost Estimator</h1>
+        <div class="nav-links">
+            <a href="construction_cost_estimator.html" class="nav-link active">Entry</a>
+            <a href="#transactions" class="nav-link">Transactions</a>
+            <a href="#categories" class="nav-link">Categories</a>
+            <a href="#dashboard" class="nav-link">Dashboard</a>
+            <a href="#estimator" class="nav-link">Estimator</a>
+        </div>
+    </nav>
+
+<!-- Category Management - Full Width -->
+        <div class="card category-manager-section" id="categories">
+            <div class="card-header">
+                <h2 class="card-title">
+                    <span class="card-icon">🏷️</span>
+                    Category Manager
+                </h2>
+                <div class="category-stats">
+                    <span id="total-categories">0 categories</span>
+                </div>
+            </div>
+            
+            <div class="category-manager-content">
+                <!-- Add Category Section -->
+                <div class="add-category-section">
+                    <div class="add-category-form">
+                        <input type="text" id="new-category" placeholder="Enter new category name" maxlength="50">
+                        <button class="btn" id="add-category-btn">
+                            <span>➕</span> Add Category
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Category Controls -->
+                <div class="category-controls">
+                    <input type="text" id="search-categories" class="search-input" placeholder="Search categories...">
+                    <div class="view-toggle">
+                        <button class="view-btn active" id="list-view-btn" data-view="list">
+                            📋 List
+                        </button>
+                        <button class="view-btn" id="grid-view-btn" data-view="grid">
+                            ⊞ Grid
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Category List Section -->
+                <div class="category-list-section">
+                    <!-- Collapsible List View -->
+                    <div id="category-list-collapsible" class="category-list-view">
+                        <div class="empty-state">
+                            <div class="empty-icon">📂</div>
+                            <h4>No categories yet</h4>
+                            <p>Add your first category above or select an industry template</p>
+                        </div>
+                    </div>
+
+                    <!-- Grid View -->
+                    <div id="category-list-grid" class="category-grid-view" style="display: none;">
+                        <div class="empty-state">
+                            <div class="empty-icon">📂</div>
+                            <h4>No categories yet</h4>
+                            <p>Add your first category above or select an industry template</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
